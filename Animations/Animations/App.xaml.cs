@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Animations.Pages;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace Animations
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Page2();
         }
 
         protected override void OnStart()

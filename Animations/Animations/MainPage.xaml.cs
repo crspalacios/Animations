@@ -16,8 +16,12 @@ namespace Animations
 
         private async void AnimateClicked(object sender, EventArgs e)
         {
-            await box.FadeTo(0);
-            await box.FadeTo(1);
+            if (box.AnimationIsRunning("FadeTo"))
+            {
+                return;
+            }
+            await box.RelRotateTo(1.5);
+
         }
     }
 }
