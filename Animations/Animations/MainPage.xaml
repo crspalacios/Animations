@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Animations"
+             x:Class="Animations.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand"
+        Spacing="20">
+
+        <Frame
+            x:Name="box"
+            HeightRequest="50"
+            WidthRequest="50"
+            BackgroundColor="Blue"
+            HorizontalOptions="Center"></Frame>
+
+        <Button
+            Text="Animate"
+            CornerRadius="25"
+            BackgroundColor="BlueViolet"
+            TextColor="Wheat"
+            HorizontalOptions="Center"
+            Clicked="AnimateClicked"></Button>
+        
+    </StackLayout>
+
+</ContentPage>
